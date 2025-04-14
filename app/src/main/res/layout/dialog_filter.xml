@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@color/white"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filter"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/black"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/poppins_bold"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_brown_back" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filter"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/black"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/poppins_bold"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rating"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black"
+                android:layout_margin="@dimen/_10sdp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="-5dp">
+
+
+                <LinearLayout
+                    android:id="@+id/ll1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rounded_gray_btn_bg"
+                    android:padding="@dimen/_8sdp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:src="@drawable/ic_fill_yellow_star"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/black"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="@dimen/_7sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rounded_gray_btn_bg"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:src="@drawable/ic_fill_yellow_star"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/black"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="@dimen/_7sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rounded_gray_btn_bg"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:src="@drawable/ic_fill_yellow_star"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/black"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="@dimen/_7sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rounded_gray_btn_bg"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:src="@drawable/ic_fill_yellow_star"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/black"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="@dimen/_7sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rounded_gray_btn_bg"
+                    android:padding="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:src="@drawable/ic_fill_yellow_star"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/black"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="@dimen/_7sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"/>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/rounded_gray_bg"
+                android:padding="@dimen/_10sdp">
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bali"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/color_gray_light3"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    />
+
+
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_drop_down"
+                    app:tint="@color/color_gray_light3" />
+
+
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/property_type"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/black"
+                        />
+
+
+                    <RadioGroup
+                        android:id="@+id/rdGrpPropertyType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <RadioButton
+                                android:id="@+id/rdAll"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:button="@null"
+                                android:background="@drawable/radio_button_selector"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/all"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textColor="@color/color_brown1"
+                                android:textSize="@dimen/_11sdp"
+                                android:layout_marginTop="1sp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="@dimen/_2sdp">
+
+                            <RadioButton
+                                android:id="@+id/rdMotels"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:button="@null"
+                                android:background="@drawable/radio_button_selector"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/motels"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textColor="@color/color_brown1"
+                                android:textSize="@dimen/_11sdp"
+                                android:layout_marginTop="1sp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="@dimen/_2sdp">
+
+                            <RadioButton
+                                android:id="@+id/rdResort"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:button="@null"
+                                android:background="@drawable/radio_button_selector"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/resort"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textColor="@color/color_brown1"
+                                android:textSize="@dimen/_11sdp"
+                                android:layout_marginTop="1sp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="@dimen/_2sdp">
+
+                            <RadioButton
+                                android:id="@+id/rdGuestHouse"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:button="@null"
+                                android:background="@drawable/radio_button_selector"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/guest_house"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textColor="@color/color_brown1"
+                                android:textSize="@dimen/_11sdp"
+                                android:layout_marginTop="1sp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="@dimen/_2sdp">
+
+                            <RadioButton
+                                android:id="@+id/rdHotel"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:button="@null"
+                                android:background="@drawable/radio_button_selector"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/hotels"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textColor="@color/color_brown1"
+                                android:textSize="@dimen/_11sdp"
+                                android:layout_marginTop="1sp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                />
+
+
+                        </LinearLayout>
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/_25sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/room_type"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/black"
+                        />
+
+
+                    <RadioGroup
+                        android:id="@+id/rdGrpRoomType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <RadioButton
+                                android:id="@+id/rdAll1"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:button="@null"
+                                android:background="@drawable/radio_button_selector"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/all"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textColor="@color/color_brown1"
+                                android:textSize="@dimen/_11sdp"
+                                android:layout_marginTop="1sp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="@dimen/_2sdp">
+
+                            <RadioButton
+                                android:id="@+id/rdSuperior"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:button="@null"
+                                android:background="@drawable/radio_button_selector"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/superior"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textColor="@color/color_brown1"
+                                android:textSize="@dimen/_11sdp"
+                                android:layout_marginTop="1sp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="@dimen/_2sdp">
+
+                            <RadioButton
+                                android:id="@+id/rdDouble"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:button="@null"
+                                android:background="@drawable/radio_button_selector"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/doubles"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textColor="@color/color_brown1"
+                                android:textSize="@dimen/_11sdp"
+                                android:layout_marginTop="1sp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="@dimen/_2sdp">
+
+                            <RadioButton
+                                android:id="@+id/rdFamilyStay"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:button="@null"
+                                android:background="@drawable/radio_button_selector"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/family_stay"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textColor="@color/color_brown1"
+                                android:textSize="@dimen/_11sdp"
+                                android:layout_marginTop="1sp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="@dimen/_2sdp">
+
+                            <RadioButton
+                                android:id="@+id/rdSingle"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:button="@null"
+                                android:background="@drawable/radio_button_selector"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/single"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textColor="@color/color_brown1"
+                                android:textSize="@dimen/_11sdp"
+                                android:layout_marginTop="1sp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                />
+
+
+                        </LinearLayout>
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/budget_range"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"/>
+
+
+
+            <com.mohammedalaa.seekbar.RangeSeekBarView
+                android:id="@+id/range_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:barHeight="15dp"
+                app:baseColor="@color/color_gray_light3"
+                app:circleFillColor="@color/color_primary"
+                app:circleRadius="15dp"
+                app:circleTextColor="@color/white"
+                app:circleTextSize="@dimen/value_bar_circleTextSize"
+                app:currentValue="60"
+                app:fillColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:maxValue="150"
+                app:minValue="15"
+                app:orientation="LEFT_TO_RIGHT"
+                app:stepValue="5" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:visibility="gone"/>
+
+
+            <RelativeLayout
+                android:id="@+id/btnDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/rounded_gray_bg"
+                android:padding="@dimen/_10sdp"
+                android:visibility="gone">
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="06 April to 08 April"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/color_gray_light3"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    />
+
+
+
+                <ImageView
+                    android:id="@+id/ivDate"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_calender"
+                    android:layout_marginEnd="@dimen/_5sdp"/>
+
+
+
+            </RelativeLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnApply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/rounded_brown_btn_bg"
+                android:fontFamily="@font/poppins_regular"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/apply"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</layout>

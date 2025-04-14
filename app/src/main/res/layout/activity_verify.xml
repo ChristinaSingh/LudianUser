@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp"
+            >
+
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ic_brown_back"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/check_your_mail"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textSize="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/please_enter_four_digit_number"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/color_gray_light1"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:elevation="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                >
+
+
+                <EditText
+                    android:maxLength="1"
+                    android:id="@+id/et1"
+                    android:digits="1234567890"
+                    android:inputType="number"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/rounded_pin_gray_bg"
+                    android:gravity="center"
+                    android:text="9"
+
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    />
+
+
+
+                <EditText
+                    android:maxLength="1"
+                    android:id="@+id/et2"
+                    android:digits="1234567890"
+                    android:inputType="number"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/rounded_pin_gray_bg"
+                    android:gravity="center"
+                    android:text="9"
+
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    />
+
+                <EditText
+                    android:maxLength="1"
+                    android:id="@+id/et3"
+                    android:digits="1234567890"
+                    android:inputType="number"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/rounded_pin_gray_bg"
+                    android:gravity="center"
+                    android:text="9"
+
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    />
+
+                <EditText
+                    android:maxLength="1"
+                    android:id="@+id/et4"
+                    android:digits="1234567890"
+                    android:inputType="number"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/rounded_pin_gray_bg"
+                    android:gravity="center"
+                    android:text="9"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    />
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_verify"
+                android:layout_marginTop="@dimen/_15sdp"
+                />
+
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/rounded_brown_btn_bg"
+            android:fontFamily="@font/poppins_regular"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+
+    </RelativeLayout>
+</layout>

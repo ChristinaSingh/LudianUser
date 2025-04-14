@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background color for the entire TextView -->
+    <item android:drawable="@android:color/transparent" />
+
+    <!-- Line at the bottom -->
+
+    <item
+        android:top="@dimen/_19sdp"
+    android:drawable="@color/color_primary" />
+</layer-list>

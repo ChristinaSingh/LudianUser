@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/llMain"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:gravity="center"
+            android:orientation="vertical"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_margin="@dimen/_2sdp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/cellDayText"
+                android:text="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                />
+
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SAR 1200"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/_8sdp"
+                android:layout_marginTop="-20dp"
+                android:textColor="@color/black"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewNote"
+            android:layout_width="@dimen/_5sdp"
+            android:layout_height="@dimen/_5sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/_7sdp"
+            android:visibility="gone"
+            android:background="@drawable/circle_note_active_bg"/>
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="black_light">#302D2D</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="color_ludian_bg">#F1EEE6</color>
+
+
+
+
+    <color name="color_primary">#B99B81</color>
+    <color name="color_brown1">#ADA4A5</color>
+
+
+    <color name="color_primary_dark">#4087FD</color>
+    <color name="color_primary_light">#280067F8</color>
+
+    <color name="gray">#F7F8F8</color>
+    <color name="color_gray_text">#ADA4A5</color>
+    <color name="color_gray_light1">#9DB2BF</color>
+    <color name="color_gray_light2"> #878787</color>
+    <color name="color_gray_light3">#777777</color>
+    <color name="color_gray_line">#E3E3E3</color>
+    <color name="color_gray_light7">#9E9E9E</color>
+
+    <color name="color_red_dark">#DC0000</color>
+    <color name="color_blue1">#1802BE</color>
+    <color name="color_blue2">#4C4DDC</color>
+
+
+    <color name="color_gray_calendar">#F9F9F9</color>
+
+    <color name="gray_one">#F8F8F8</color>
+    <color name="color_red_light">#D90429</color>
+
+    <color name="color_green">#34A853</color>
+    <color name="color_green1">#00C366</color>
+    <color name="color_green2">#CCF3E0</color>
+    <color name="color_black_light">#352C48</color>
+
+    <color name="color_black1">#1D3A70</color>
+
+    <color name="color_gray_light5">#E8E6EA</color>
+
+
+    <color name="color_selected_range">#FFCC00</color>
+    <color name="color_start_date">#FF0000</color>
+    <color name="color_end_date">#00FF00</color>
+    <color name="default_background">#FFFFFF</color>
+</resources>

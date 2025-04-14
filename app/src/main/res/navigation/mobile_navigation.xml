@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.ludian.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment"
+            app:enterAnim="@anim/trans_left_in"
+            app:exitAnim="@anim/trans_right_out"
+            app:popExitAnim="@anim/trans_right_out"/>
+
+
+        <action
+            android:id="@+id/action_homeFragment_to_filterFragment"
+            app:destination="@id/filterFragment"
+            app:enterAnim="@anim/trans_left_in"
+            app:exitAnim="@anim/trans_right_out"
+            app:popExitAnim="@anim/trans_right_out"/>
+
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_explore"
+        android:name="com.ludian.ui.explore.ExploreFragment"
+        android:label="fragment_explore"
+        tools:layout="@layout/fragment_explore" />
+    <fragment
+        android:id="@+id/navigation_bookmark"
+        android:name="com.ludian.ui.bookmark.BookmarkFragment"
+        android:label="fragment_bookmark"
+        tools:layout="@layout/fragment_bookmark" />
+
+
+    <fragment
+        android:id="@+id/navigation_booking"
+        android:name="com.ludian.ui.booking.BookingFragment"
+        android:label="fragment_booking"
+        tools:layout="@layout/fragment_booking" />
+
+
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.ludian.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+
+
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.ludian.ui.home.SearchFragment"
+        android:label="fragment_explore"
+        tools:layout="@layout/fragment_search" >
+
+        <action
+            android:id="@+id/action_searchFragment_to_searchDetailFragment"
+            app:destination="@id/searchDetailFragment"
+            app:enterAnim="@anim/trans_left_in"
+            app:exitAnim="@anim/trans_right_out"
+            app:popExitAnim="@anim/trans_right_out"/>
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/searchDetailFragment"
+        android:name="com.ludian.ui.home.SearchDetailFragment"
+        android:label="fragment_explore"
+        tools:layout="@layout/fragment_search_deatil" />
+
+
+
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="com.ludian.ui.home.FilterFragment"
+        android:label="fragment_explore"
+        tools:layout="@layout/fragment_filter" />
+
+
+
+</navigation>

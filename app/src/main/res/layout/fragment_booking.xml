@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_black_light"
+                android:textSize="@dimen/_16sdp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/booking"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/_15sdp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/llUpcoming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_black_light"
+                        android:textSize="@dimen/_13sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/upcoming"
+                        />
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_4sdp"
+                        android:background="@drawable/rounded_brown5_bg"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llPrevious"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/_25sdp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_black_light"
+                        android:textSize="@dimen/_13sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/completed"
+                        />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_4sdp"
+                        android:background="@drawable/rounded_brown5_bg"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llCancelled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/_25sdp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_black_light"
+                        android:textSize="@dimen/_13sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/Cancelled"
+                        />
+
+                    <View
+                        android:id="@+id/view3"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_4sdp"
+                        android:background="@drawable/rounded_brown5_bg"/>
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvBooking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_booking" />
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvNotFound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_black_light"
+            android:textSize="@dimen/_14sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/data_not_available"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+</layout>

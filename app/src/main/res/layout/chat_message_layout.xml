@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layout_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_primary"
+            android:elevation="2dp">
+
+            <EditText
+                android:id="@+id/tv_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:hint="@string/type_msg"
+                android:textColorHint="@color/white"
+                android:maxLines="3"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingLeft="10dp"
+                android:textColor="@color/white"
+                android:layout_toStartOf="@+id/img_send_icon"/>
+
+
+            <ImageView
+                android:id="@+id/img_send_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="8dp"
+                android:src="@drawable/send_btn"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

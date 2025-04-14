@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_white_25bg"
+    android:elevation="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_10sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <RelativeLayout
+            android:id="@+id/rlHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ic_brown_back" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/add_review"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_below="@+id/rlHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_above="@+id/btnSubmit">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_160sdp"
+                android:visibility="gone">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"/>
+
+
+
+                <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                    android:id="@+id/dots_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:dotsColor="@color/color_gray_line"
+                    app:dotsCornerRadius="@dimen/_5sdp"
+                    app:dotsSize="@dimen/_8sdp"
+                    app:dotsSpacing="4dp"
+                    app:dotsWidthFactor="2.5"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    app:selectedDotColor="@color/white"
+                    app:progressMode="true"
+                    android:visibility="gone"
+                    />
+
+
+
+                <!--
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_60sdp"
+                                android:padding="@dimen/_10sdp">
+
+                                <ImageView
+                                    android:id="@+id/ivBack"
+                                    android:layout_width="@dimen/_25sdp"
+                                    android:layout_height="@dimen/_25sdp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/ic_brown_back" />
+
+                                <LinearLayout
+                                    android:id="@+id/llShare"
+                                    android:layout_width="@dimen/_25sdp"
+                                    android:layout_height="@dimen/_25sdp"
+                                    android:layout_margin="@dimen/_10sdp"
+                                    android:layout_toStartOf="@+id/llBookmark"
+                                    android:background="@drawable/circle_white"
+                                    android:layout_marginEnd="@dimen/_15sdp"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/_15sdp"
+                                        android:layout_height="@dimen/_15sdp"
+                                        android:src="@drawable/ic_share"
+                                        />
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:id="@+id/llBookmark"
+                                    android:layout_width="@dimen/_25sdp"
+                                    android:layout_height="@dimen/_25sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/_10sdp"
+                                    android:background="@drawable/circle_white"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:id="@+id/ivBookmark"
+                                        android:layout_width="@dimen/_15sdp"
+                                        android:layout_height="@dimen/_15sdp"
+                                        android:src="@drawable/ic_bookmark_select"
+                                        />
+                                </LinearLayout>
+
+
+                            </RelativeLayout>
+                -->
+
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:padding="@dimen/_5sdp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+
+             <de.hdodenhof.circleimageview.CircleImageView
+                 android:layout_width="@dimen/_60sdp"
+                 android:layout_height="@dimen/_60sdp"
+                 android:layout_centerInParent="true"
+                 android:id="@+id/ivProvider"
+                 android:src="@drawable/user_default"/>
+
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_black_light"
+                    android:textSize="@dimen/_13sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    />
+
+
+
+                <LinearLayout
+                    android:id="@+id/llPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tvPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_blue2"
+                        android:textSize="@dimen/_12sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="$200,7"
+
+                        />
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_gray_light2"
+                        android:textSize="@dimen/_11sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text=" /night"
+
+                        />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:src="@drawable/ic_pin"
+                    app:tint="@color/color_blue2" />
+
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_gray_light2"
+                    android:textSize="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text=""
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="-2dp"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize=".5"
+                android:rating="0.0"
+                android:layout_margin="@dimen/_25sdp"
+                android:layout_gravity="center_horizontal"
+                android:progressTint="@color/yellow"/>
+
+
+            <EditText
+                android:id="@+id/edReview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:background="@drawable/rounded_pin_gray_bg"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:hint="@string/add_review"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:gravity="center_vertical|top"
+                android:textColor="@color/black"
+                android:textColorHint="@color/color_gray_light7"
+                android:maxLines="5"
+                android:inputType="text"
+                android:imeOptions="actionDone"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:alpha=".8"
+            android:background="@drawable/rounded_brown_btn_bg"
+            android:fontFamily="@font/poppins_regular"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="visible"/>
+
+
+
+    </RelativeLayout>
+

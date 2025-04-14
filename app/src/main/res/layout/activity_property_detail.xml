@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160sdp">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+
+            <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                android:id="@+id/dots_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:dotsColor="@color/color_gray_line"
+                app:dotsCornerRadius="@dimen/_5sdp"
+                app:dotsSize="@dimen/_8sdp"
+                app:dotsSpacing="4dp"
+                app:dotsWidthFactor="2.5"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/_15sdp"
+                app:selectedDotColor="@color/white"
+                app:progressMode="true"
+                />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_brown_back" />
+
+                <LinearLayout
+                    android:id="@+id/llShare"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_toStartOf="@+id/llBookmark"
+                    android:background="@drawable/circle_white"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:src="@drawable/ic_share"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llBookmark"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/circle_white"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ivBookmark"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:src="@drawable/ic_bookmark_select"
+                        />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp"
+            android:gravity="center_horizontal"
+            android:layout_margin="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/ic_wifi"/>
+
+            <TextView
+                android:id="@+id/tvWifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wifi"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp"
+                android:layout_marginStart="@dimen/_5sdp"/>
+
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/ic_breakfast"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tvBreakfast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/free_breakfast"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:visibility="gone"/>
+
+
+            <ImageView
+                android:id="@+id/iv3"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/ic_fill_yellow_star"
+                android:layout_marginStart="@dimen/_20sdp"/>
+
+            <TextView
+                android:id="@+id/tvRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.0"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp"
+                android:layout_marginStart="@dimen/_5sdp"/>
+
+
+
+<!--
+            <ImageView
+                android:id="@+id/ivEdit"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/ic_brown_edit"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_gravity="end"/>
+-->
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_black_light"
+                android:textSize="@dimen/_13sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Newhouse Hotel"
+                android:layout_toStartOf="@+id/llPrice"
+                />
+
+
+
+            <LinearLayout
+                android:id="@+id/llPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_blue2"
+                    android:textSize="@dimen/_12sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="$200,7"
+
+                    />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_gray_light2"
+                    android:textSize="@dimen/_11sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/night"
+
+                    />
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:src="@drawable/ic_pin"
+                app:tint="@color/color_blue2" />
+
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_gray_light2"
+                android:textSize="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Alice Springs NT 0870, Australia"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="-2dp"
+                />
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_black_light"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/description"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_gray_light2"
+            android:textSize="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Aston Hotel, Alice Springs NT 0870, Australia is a modern hotel. elegant 5 star hotel overlooking the sea. perfect for a romantic, charming Read More. . ."
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="-2dp"
+            />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_black_light"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/preview"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:listitem="@layout/item_preview"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_marginTop="@dimen/_13sdp"
+              android:layout_marginStart="@dimen/_10sdp"
+              android:layout_marginEnd="@dimen/_10sdp"
+              android:background="@drawable/rounded_pin_gray_bg"
+              android:padding="@dimen/_10sdp">
+
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/color_black_light"
+                  android:textSize="@dimen/_14sdp"
+                  android:fontFamily="@font/poppins_bold"
+                  android:text="@string/overview"
+                  />
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:weightSum="1"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="@dimen/_7sdp">
+
+                  <LinearLayout
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_weight=".5">
+
+                      <ImageView
+                          android:layout_width="@dimen/_15sdp"
+                          android:layout_height="@dimen/_15sdp"
+                          android:src="@drawable/ic_bedroom"/>
+
+                      <TextView
+                          android:id="@+id/tvBedroom"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="2 bedrooms"
+                          android:fontFamily="@font/poppins_regular"
+                          android:textColor="@color/black"
+                          android:textSize="@dimen/_11sdp"
+                          android:layout_marginStart="@dimen/_5sdp"/>
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_weight=".5">
+
+                      <ImageView
+                          android:layout_width="@dimen/_15sdp"
+                          android:layout_height="@dimen/_15sdp"
+                          android:src="@drawable/ic_guest"/>
+
+                      <TextView
+                          android:id="@+id/tvGuest"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="6 guests max."
+                          android:fontFamily="@font/poppins_regular"
+                          android:textColor="@color/black"
+                          android:textSize="@dimen/_11sdp"
+                          android:layout_marginStart="@dimen/_5sdp"/>
+
+                  </LinearLayout>
+
+
+
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:weightSum="1"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="@dimen/_7sdp">
+
+                  <LinearLayout
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_weight=".5">
+
+                      <ImageView
+                          android:layout_width="@dimen/_15sdp"
+                          android:layout_height="@dimen/_15sdp"
+                          android:src="@drawable/ic_house"/>
+
+                      <TextView
+                          android:id="@+id/tvHouse"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="House"
+                          android:fontFamily="@font/poppins_regular"
+                          android:textColor="@color/black"
+                          android:textSize="@dimen/_11sdp"
+                          android:layout_marginStart="@dimen/_5sdp"/>
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_weight=".5">
+
+                      <ImageView
+                          android:layout_width="@dimen/_15sdp"
+                          android:layout_height="@dimen/_15sdp"
+                          android:src="@drawable/ic_size"/>
+
+                      <TextView
+                          android:id="@+id/tvSize"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="112 m²"
+                          android:fontFamily="@font/poppins_regular"
+                          android:textColor="@color/black"
+                          android:textSize="@dimen/_11sdp"
+                          android:layout_marginStart="@dimen/_5sdp"/>
+
+                  </LinearLayout>
+
+
+
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:weightSum="1"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="@dimen/_7sdp"
+                  android:layout_marginBottom="@dimen/_7sdp">
+
+                  <LinearLayout
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_weight=".5">
+
+                      <ImageView
+                          android:layout_width="@dimen/_15sdp"
+                          android:layout_height="@dimen/_15sdp"
+                          android:src="@drawable/ic_bathroom"/>
+
+                      <TextView
+                          android:id="@+id/tvBathroom"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="2 bathrooms"
+                          android:fontFamily="@font/poppins_regular"
+                          android:textColor="@color/black"
+                          android:textSize="@dimen/_11sdp"
+                          android:layout_marginStart="@dimen/_5sdp"/>
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_weight=".5">
+
+                      <ImageView
+                          android:layout_width="@dimen/_15sdp"
+                          android:layout_height="@dimen/_15sdp"
+                          android:src="@drawable/ic_pets"/>
+
+                      <TextView
+                          android:id="@+id/tvPets"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="No pets"
+                          android:fontFamily="@font/poppins_regular"
+                          android:textColor="@color/black"
+                          android:textSize="@dimen/_11sdp"
+                          android:layout_marginStart="@dimen/_5sdp"/>
+
+                  </LinearLayout>
+
+
+
+
+              </LinearLayout>
+
+
+          </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_black_light"
+            android:textSize="@dimen/_14sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/reasons_to_book"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp">
+
+
+            <ImageView
+                android:id="@+id/ivChildren"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_adult" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_toEndOf="@+id/ivChildren"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Includes all essentials"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-3dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="WiFi, Kitchen, Air conditioning and more"
+                    android:textColor="@color/color_gray_light3"
+                    android:textSize="@dimen/_10sdp" />
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp">
+
+
+            <ImageView
+                android:id="@+id/ivChildren1"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_adult" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_toEndOf="@+id/ivChildren1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Great home"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-3dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="The average rating is 4.4/5.0"
+                    android:textColor="@color/color_gray_light3"
+                    android:textSize="@dimen/_10sdp" />
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp">
+
+
+            <ImageView
+                android:id="@+id/ivChildren13"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_adult" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_toEndOf="@+id/ivChildren13"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Safe booking"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-3dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Safe and encrypted transfer of your payment data"
+                    android:textColor="@color/color_gray_light3"
+                    android:textSize="@dimen/_10sdp" />
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp">
+
+
+            <ImageView
+                android:id="@+id/ivChildren14"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_adult" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_toEndOf="@+id/ivChildren14"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Top-notch Customer Support"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-3dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Highly-rated Customer Support you can rely on"
+                    android:textColor="@color/color_gray_light3"
+                    android:textSize="@dimen/_10sdp" />
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_black_light"
+            android:textSize="@dimen/_14sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/review"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:visibility="visible"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/rlReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_gray_btn_bg"
+            android:padding="@dimen/_9sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:visibility="gone">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_gray_light3"
+                android:textSize="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/add_a_comment"
+                android:background="@null"
+                />
+
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_review"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/rounded_brown_btn_bg"
+            android:fontFamily="@font/poppins_regular"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/book"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
+
+
+</layout>
